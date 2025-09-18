@@ -252,7 +252,7 @@ components:
       properties:
         courseId:
           type: string
-          example: "C101"
+          example: "B222"
         courseName:
           type: string
           example: "Mobile Development"
@@ -277,7 +277,7 @@ components:
       properties:
         courseId:
           type: string
-          example: "Sec1"
+          example: "B222"
         courseName:
           type: string
           example: "Mobile Development"
