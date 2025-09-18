@@ -33,7 +33,7 @@ paths:
                     example: "Trainer registered successfully"
                   trainerId:
                     type: string
-                    example: "T123"
+                    example: "A111"
         '400':
           description: Invalid request data
         '409':
@@ -229,7 +229,7 @@ components:
         password:
           type: string
           format: password
-          example: "anulms@123"
+          example: "lms@123"
       required: [email, password]
 
     LoginResponse:
