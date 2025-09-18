@@ -197,7 +197,7 @@ components:
       properties:
         trainerId:
           type: string
-          example: "HG"
+          example: "T1001"
         name:
           type: string
           example: "Anusha"
@@ -225,7 +225,7 @@ components:
         email:
           type: string
           format: email
-          example: "anu@lms.com"
+          example: "anusha@lms.com"
         password:
           type: string
           format: password
@@ -238,13 +238,13 @@ components:
       properties:
         token:
           type: string
-          example: "dhusgddraesfdt"
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
         expiresIn:
           type: integer
           example: 3600
         trainerId:
           type: string
-          example: "HG"
+          example: "T1001"
 
     CourseRequest:
       type: object
@@ -252,7 +252,7 @@ components:
       properties:
         courseId:
           type: string
-          example: "B222"
+          example: "C2001"
         courseName:
           type: string
           example: "Mobile Development"
@@ -269,7 +269,7 @@ components:
           type: string
           enum: [ACTIVE, INACTIVE]
           example: "ACTIVE"
-      required: [courseId, courseName, category]
+      required: [courseName, category]  # removed courseId from required for creation
 
     CourseResponse:
       type: object
@@ -277,7 +277,7 @@ components:
       properties:
         courseId:
           type: string
-          example: "B222"
+          example: "C2001"
         courseName:
           type: string
           example: "Mobile Development"
